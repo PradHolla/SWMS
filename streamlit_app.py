@@ -6,7 +6,6 @@ st.set_page_config(page_title='Website Monitor', page_icon=':globe_with_meridian
 st.sidebar.title('Actions')
 action = st.sidebar.radio('Options', ['Create', 'Delete', 'View'])
 
-# Add a website
 if action == 'Create':
     st.title('Add Website')
     email = st.text_input('Email')
@@ -27,7 +26,6 @@ if action == 'Create':
         response = requests.request("POST", url, headers=headers, data=payload)
         st.write(response.text)
 
-# Delete a website
 elif action == 'Delete':
     st.title('Delete Website')
     email = st.text_input('Email')
@@ -46,7 +44,6 @@ elif action == 'Delete':
         response = requests.request("DELETE", url, headers=headers, data=payload)
         st.write(response.text)
 
-# View websites
 elif action == 'View':
     st.title('View Websites')
     email = st.text_input('Email')
