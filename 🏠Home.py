@@ -3,7 +3,7 @@ import requests
 import json
 import components.authenticate as authenticate
 
-st.set_page_config(page_title='Website Monitor', page_icon=':globe_with_meridians:', layout='wide', initial_sidebar_state='auto')
+st.set_page_config(page_title='Website Monitor', page_icon='➕', layout='wide', initial_sidebar_state='auto')
 
 st.header('Website Monitor')
 st.write('This app monitors websites and sends an email if the website is down.')
