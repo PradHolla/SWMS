@@ -14,7 +14,7 @@ if st.session_state["authenticated"]:
     st.title('Delete Website')
     email = st.text_input('Email', value=st.session_state["user_info"]["email"], disabled=True)
     website = st.text_input('Website')
-    if st.button('Delete'):
+    if st.button('Delete') and email and website:
         url = st.secrets["delete_url"]
 
         payload = json.dumps({
