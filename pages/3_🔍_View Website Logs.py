@@ -42,7 +42,7 @@ if st.session_state["authenticated"]:
                     else:
                         formatted_item[key] = float(value['N'])
             formatted_response.append(formatted_item)
-
+        st.write("The times are in UTC. You can convert them to your local time zone using this website: https://www.timeanddate.com/worldclock/converter.html")
         st.table(formatted_response)
 
 else:
