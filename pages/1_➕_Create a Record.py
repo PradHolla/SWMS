@@ -13,8 +13,8 @@ else:
 if st.session_state["authenticated"]:
     st.title('Add Website')
     email = st.text_input('Email', value=st.session_state["user_info"]["email"], disabled=True)
-    website = st.text_input('Website')
-    frequency = st.number_input('Frequency (minutes)', min_value=1)
+    website = st.text_input('Website', placeholder='https://www.google.com/')
+    frequency = st.number_input('Frequency (minutes)', value=5, min_value=1)
     if st.button('Add') and email and website and frequency:
         url = st.secrets["add_url"]
 
