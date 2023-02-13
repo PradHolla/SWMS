@@ -11,7 +11,7 @@ else:
     authenticate.button_login()
 
 if st.session_state["authenticated"]:
-    st.title('Add Website')
+    st.title('Add Website Record')
     email = st.text_input('Email', value=st.session_state["user_info"]["email"], disabled=True)
     website = st.text_input('Website', placeholder='https://www.google.com/')
     frequency = st.number_input('Frequency (minutes)', value=5, min_value=1)
