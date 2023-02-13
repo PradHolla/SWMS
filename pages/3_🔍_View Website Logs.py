@@ -12,7 +12,7 @@ else:
     authenticate.button_login()
 
 if st.session_state["authenticated"]:
-    st.title('View Websites')
+    st.title('View Website Logs')
     email = st.text_input('Email', value=st.session_state["user_info"]["email"], disabled=True)
     website = st.text_input('Website', placeholder='https://www.google.com/')
     if st.button('View') and email and website:
