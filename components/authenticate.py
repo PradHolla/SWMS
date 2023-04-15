@@ -9,10 +9,10 @@ import json
 # Read constants from environment file
 # ------------------------------------
 # load_dotenv()
-COGNITO_DOMAIN = ["COGNITO_DOMAIN"]
-CLIENT_ID = ["CLIENT_ID"]
-CLIENT_SECRET = ["CLIENT_SECRET"]
-APP_URI = ["APP_URI"]
+COGNITO_DOMAIN = st.secrets["COGNITO_DOMAIN"]
+CLIENT_ID = st.secrets["CLIENT_ID"]
+CLIENT_SECRET = st.secrets["CLIENT_SECRET"]
+APP_URI = st.secrets["APP_URI"]
 
 
 # ------------------------------------
