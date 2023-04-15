@@ -230,7 +230,7 @@ html_css_login = """
 </style>
 """
 
-html_button_login = f"{html_css_login}<a href='{login_link}' class='button-login' target='_blank'>Log In</a>"
+html_button_login = f"{html_css_login}<a href='' class='button-login'>Log In</a>"
 html_button_logout = f"{html_css_login}<a href='{logout_link}' class='button-login' target='_self'>Log Out</a>"
 
 
